@@ -27,37 +27,45 @@ https://www.veeam.com/endpoint-backup-free.html
 
 4) Once the installation is finished, check the box that says "Launch Veeam Agent for Microsoft Windows" and click Finish
 
-Step 3: Configure Veeam Agent for Backup
+# Step 3: Configure Veeam Agent for Backup
+
 After launching Veeam Agent, the Initial Configuration Wizard will appear. Click Next to proceed.
-Select Backup Mode :
+
+1) **Select Backup Mode :**
 Choose Entire computer if you want to back up the entire system (recommended for full protection).
 Alternatively, choose Volume level backup or File level backup if you only need to back up specific files or volumes.
 Click Next .
-Specify Backup Destination :
+2) **Specify Backup Destination :**
 Choose where you want to store the backup:
 Local storage (e.g., external hard drive or network share).
 Cloud storage (if you have a Veeam Cloud Connect account).
 For simplicity, select Local storage and specify the path to the backup location (e.g., D:\Backups).
 Click Next .
-Set Backup Schedule :
+
+3) **Set Backup Schedule :**
 Choose how often you want the backup to run:
 Daily : Backups occur once per day.
 Weekly : Backups occur on specific days of the week.
 Set the time for the backup to start (e.g., 2:00 AM).
 Click Next .
-Retention Policy :
+
+4) **Retention Policy :**
 Specify how many restore points to keep (e.g., 7 restore points).
 Older backups will be automatically deleted when the retention limit is reached.
 Click Next .
-Summary :
+
+5) **Summary :**
 Review the configuration settings.
 If everything looks correct, click Finish to save the backup job.
-Step 4: Run the First Backup
-After completing the configuration, Veeam Agent will display the main dashboard.
-To manually start the first backup:
-Click the Backup Now button.
-Monitor the progress in the dashboard.
-Once the backup is complete, verify that the backup files are stored in the specified location.
+
+# Step 4: Run the First Backup
+1) After completing the configuration, Veeam Agent will display the main dashboard.
+
+2) To manually start the first backup:
+-Click the Backup Now button.
+-Monitor the progress in the dashboard.
+
+3) Once the backup is complete, verify that the backup files are stored in the specified location.
 
 # Step 5: Test the Restore Process
 
